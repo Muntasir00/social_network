@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #new apps
     'core',
+    #third party apps
+    'django_social_share',
 ]
 
 MIDDLEWARE = [
