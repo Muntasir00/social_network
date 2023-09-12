@@ -118,20 +118,28 @@
 
 							<div class="col-lg-6">
 								<div class="central-meta">
-									<ul class="photos">
+
+									<ul >
 					
 										{% for post in user_posts %}
-										{% if post.image %}
 										<li>
+											<span class="p-2 rounded-full text-black"><strong>Posts</strong></span>	
+										<li/>
+										<li>
+										<p>
+											{{post.caption}}
+									   </p>
+									   <li/>
+
+										{% if post.image %}
+										<li class="photos" >
 											<a class="strip" href="{{post.image.url}}" title="" data-strip-group="mygroup" data-strip-group-options="loop: false">
 												<img src="{{post.image.url}}" style="height: 250px; width: 300px;" alt=""></a>
 										</li>
 										{% else %}
 										<p> Post has no Images</p>
 										{% endif %}
-										<p>
-											{{post.caption}}
-									   </p>
+
 										{% endfor %}
 										
 										
