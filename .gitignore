@@ -1,0 +1,3 @@
+.virtual_env/
+*.txt
+./social_media_platform/.env
